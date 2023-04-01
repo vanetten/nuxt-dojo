@@ -3,8 +3,8 @@
     <div class="grid grid-cols-4 gap-5">
       <!-- loop through products -->
       <div v-for="p in products">
-        <!-- link to details page -->
-        <NuxtLink :to="`/products/${p.id}`">{{ p.title }}</NuxtLink>
+        <!-- pass p to the ProductCard component as a named property -->
+        <ProductCard :product="p" />
       </div>
     </div>
   </div>

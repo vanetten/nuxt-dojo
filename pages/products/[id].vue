@@ -1,8 +1,7 @@
 <template>
   <div>
-    <p>{{ product.title }}</p>
-    <p>{{ product.price }}</p>
-    <p>{{ product.id }}</p>
+    <!-- pass product to the ProductDeatils component as a named property -->
+    <ProductDetails :product="product" />
   </div>
 </template>
 
