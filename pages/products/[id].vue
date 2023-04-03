@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>Nuxt Dojo | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
     <!-- pass product to the ProductDeatils component as a named property -->
     <ProductDetails :product="product" />
   </div>
